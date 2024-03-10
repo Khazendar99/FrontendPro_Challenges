@@ -1,0 +1,73 @@
+/* Use @import directive to import fonts here */
+
+body {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.parent {
+  background-color: rgb(212, 211, 197);
+  height: 100vh;
+  display: flex;
+}
+.container {
+  width: 20%;
+  min-width: 300px;
+  height: fit-content;
+  margin: auto;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.container img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+}
+.container .paragraphs {
+  padding-left: 20px;
+}
+.container .tech {
+  color: white;
+  padding: 5px 10px;
+  background-color: rgb(255, 117, 67);
+  border-radius: 15px;
+  width: fit-content;
+}
+.container .first-p {
+  font-weight: bold;
+}
+.container .second-p {
+  color: rgba(0, 0, 0, 0.9);
+}
+.container .profile {
+  display: flex;
+  align-items: center;
+}
+.container .profile img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+.container .profile .person-details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.container .profile .person-details span:first-child {
+  font-weight: bold;
+}
+.container .profile .person-details span:nth-child(2) {
+  color: rgba(0, 0, 0, 0.7);
+}
+@media (max-width: 350px) {
+  .container {
+    min-width: 250px;
+    font-size: 0.6rem;
+  }
+}
